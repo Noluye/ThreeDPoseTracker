@@ -524,6 +524,7 @@ MonoBehaviour:
   - {fileID: 7306085033103014057}
   m_hitRadius: 0.02
   ColliderGroups: []
+  m_updateType: 0
 --- !u!114 &1033156797373294717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -551,6 +552,7 @@ MonoBehaviour:
   - {fileID: 2986029563363952593}
   m_hitRadius: 0.02
   ColliderGroups: []
+  m_updateType: 0
 --- !u!114 &8015109491585659438
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -582,6 +584,7 @@ MonoBehaviour:
   ColliderGroups:
   - {fileID: 4249795813915673743}
   - {fileID: 6196646641609383620}
+  m_updateType: 0
 --- !u!114 &6605372334696550636
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -616,6 +619,7 @@ MonoBehaviour:
   - {fileID: 3135679053389319620}
   - {fileID: 3433116717943788095}
   - {fileID: 5470223500488987039}
+  m_updateType: 0
 --- !u!114 &8526568236042316292
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -650,6 +654,7 @@ MonoBehaviour:
   - {fileID: 3135679053389319620}
   - {fileID: 3433116717943788095}
   - {fileID: 5470223500488987039}
+  m_updateType: 0
 --- !u!114 &194208055197239096
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -684,6 +689,7 @@ MonoBehaviour:
   - {fileID: 3135679053389319620}
   - {fileID: 3433116717943788095}
   - {fileID: 5470223500488987039}
+  m_updateType: 0
 --- !u!114 &3110189846470781956
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -718,6 +724,7 @@ MonoBehaviour:
   - {fileID: 3135679053389319620}
   - {fileID: 3433116717943788095}
   - {fileID: 5470223500488987039}
+  m_updateType: 0
 --- !u!114 &6588653607746134302
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -752,6 +759,7 @@ MonoBehaviour:
   - {fileID: 3135679053389319620}
   - {fileID: 3433116717943788095}
   - {fileID: 5470223500488987039}
+  m_updateType: 0
 --- !u!114 &3056481168034729704
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -786,6 +794,7 @@ MonoBehaviour:
   - {fileID: 3135679053389319620}
   - {fileID: 3433116717943788095}
   - {fileID: 5470223500488987039}
+  m_updateType: 0
 --- !u!114 &929362141872522338
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -820,6 +829,7 @@ MonoBehaviour:
   - {fileID: 3135679053389319620}
   - {fileID: 3433116717943788095}
   - {fileID: 5470223500488987039}
+  m_updateType: 0
 --- !u!114 &5944669501999970051
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -854,6 +864,7 @@ MonoBehaviour:
   - {fileID: 3135679053389319620}
   - {fileID: 3433116717943788095}
   - {fileID: 5470223500488987039}
+  m_updateType: 0
 --- !u!114 &6306968032067057028
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -888,6 +899,7 @@ MonoBehaviour:
   - {fileID: 3135679053389319620}
   - {fileID: 3433116717943788095}
   - {fileID: 5470223500488987039}
+  m_updateType: 0
 --- !u!114 &5107866102110804120
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -922,6 +934,7 @@ MonoBehaviour:
   - {fileID: 3135679053389319620}
   - {fileID: 3433116717943788095}
   - {fileID: 5470223500488987039}
+  m_updateType: 0
 --- !u!1 &1153541360325415221
 GameObject:
   m_ObjectHideFlags: 0
@@ -1851,9 +1864,9 @@ SkinnedMeshRenderer:
   m_BlendShapeWeights: []
   m_RootBone: {fileID: 3522764417054206076}
   m_AABB:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0, y: 0, z: 0}
-  m_DirtyAABB: 1
+    m_Center: {x: 0.00029861927, y: 0.8077439, z: -0.021447204}
+    m_Extent: {x: 0.69199896, y: 0.807834, z: 0.23520127}
+  m_DirtyAABB: 0
 --- !u!1 &2640717192813972288
 GameObject:
   m_ObjectHideFlags: 0
@@ -2956,6 +2969,12 @@ MonoBehaviour:
     FirstPersonFlag: 0
   - Renderer: {fileID: 6535496634220229838}
     FirstPersonFlag: 0
+  - Renderer: {fileID: 2599620371799668786}
+    FirstPersonFlag: 0
+  - Renderer: {fileID: 6105095061273757007}
+    FirstPersonFlag: 0
+  - Renderer: {fileID: 6535496634220229838}
+    FirstPersonFlag: 0
 --- !u!114 &5788365880912993957
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3862,9 +3881,9 @@ SkinnedMeshRenderer:
   m_BlendShapeWeights: []
   m_RootBone: {fileID: 3522764417054206076}
   m_AABB:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0, y: 0, z: 0}
-  m_DirtyAABB: 1
+    m_Center: {x: 0.00886979, y: 1.4220575, z: -0.022594854}
+    m_Extent: {x: 0.12491294, y: 0.22078621, z: 0.13522246}
+  m_DirtyAABB: 0
 --- !u!1 &5370785228377262652
 GameObject:
   m_ObjectHideFlags: 0
@@ -4457,9 +4476,9 @@ SkinnedMeshRenderer:
   m_BlendShapeWeights: []
   m_RootBone: {fileID: 3522764417054206076}
   m_AABB:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0, y: 0, z: 0}
-  m_DirtyAABB: 1
+    m_Center: {x: 0.00029856712, y: 1.4892743, z: 0.03264051}
+    m_Extent: {x: 0.108238325, y: 0.11519289, z: 0.07380424}
+  m_DirtyAABB: 0
 --- !u!1 &6397468567482683124
 GameObject:
   m_ObjectHideFlags: 0

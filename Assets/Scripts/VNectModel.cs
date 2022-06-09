@@ -63,26 +63,12 @@ public class VNectModel : MonoBehaviour
 
         public Vector3 Pos3D = new Vector3();
         public Vector3 Now3D = new Vector3();
-        //public Vector3 PPos3D = new Vector3();
-        //public Vector3 PPPos3D = new Vector3();
         public Vector3[] PrevPos3D = new Vector3[10];
-        //public Vector3 PrevNow3D = new Vector3();
-        //public Vector3 PPrevNow3D = new Vector3();
-        //public Vector3 Predicted3D = new Vector3();
-        //public Vector3 VecNow3D = new Vector3();
-        //public Vector3 PPredicted3D = new Vector3();
-        //public Vector3 AccNow3D = new Vector3();
-        //public Vector3 VelNow3D = new Vector3();
-        //public float VecAngle;
+       
         public float Score3D;
         public bool Visibled;
         public int Error;
-        //public float VecNow3DMagnitude;
-        //public bool RattlingCheck;
-        //public float RattlingCheckFrame;
-        //public float Threshold;
-        //public float Smooth;
-        //public float Ratio;
+        
         public bool UpperBody;
         public bool Lock;
         public int maxXIndex;
@@ -204,8 +190,6 @@ public class VNectModel : MonoBehaviour
             jointPoints[i] = new JointPoint();
             jointPoints[i].Index = (PositionIndex)i;
             jointPoints[i].Score3D = 1;
-            //jointPoints[i].RattlingCheck = false;
-            //jointPoints[i].VecNow3DMagnitude = 0;
             jointPoints[i].UpperBody = false;
             jointPoints[i].Lock = false;
             jointPoints[i].Error = 0;
@@ -944,20 +928,19 @@ public class VNectModel : MonoBehaviour
 
     void OnAnimatorIK()
     {
-        //　IKを使わない場合はこれ以降なにもしない
-        if (!useIK)
-        {
-            return;
-        }
+        if (!useIK) return;
 
-        //　アニメーションパラメータからIKのウエイトを取得
+        // get IK weights from animation params
         rightFootWeight = 1f;
         leftFootWeight = 1f;
         //rightFootWeight = anim.GetFloat("RightFootWeight");
         //leftFootWeight = anim.GetFloat("LeftFootWeight");
 
-        //　右足用のレイの視覚化
-        Debug.DrawRay(anim.GetIKPosition(AvatarIKGoal.RightFoot) + rayPositionOffset, -transform.up * rayRange, Color.red);
+        //　Ray visualization for the right foot
+        Debug.DrawRay(
+            anim.GetIKPosition(AvatarIKGoal.RightFoot) + rayPositionOffset, 
+            -transform.up * rayRange, 
+            Color.red);
         //　右足用のレイを飛ばす処理
         var ray = new Ray(anim.GetIKPosition(AvatarIKGoal.RightFoot) + rayPositionOffset, -transform.up);
 
